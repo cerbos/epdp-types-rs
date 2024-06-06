@@ -55,7 +55,6 @@ pub struct ResourceEntry {
     pub resource: Resource,
 }
 
-#[allow(dead_code)]
 #[derive(Deserialize, Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Resource {
@@ -69,7 +68,6 @@ pub struct Resource {
     pub attr: Map<String, Value>,
 }
 
-#[allow(dead_code)]
 #[derive(Deserialize, Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Principal {
@@ -89,7 +87,6 @@ pub struct AuxData {
     pub jwt: Map<String, Value>,
 }
 
-#[allow(dead_code)]
 #[derive(Deserialize, Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Request {
