@@ -18,18 +18,8 @@ pub struct ResultEntry {
     pub actions: HashMap<String, i32>,
     pub meta: ResultEntryMeta,
     pub outputs: Vec<OutputEntry>,
-    pub audit_trails: Vec<AuditTrail>,
 }
 
-#[derive(Clone, Deserialize, Serialize)]
-pub struct AuditTrail {
-    pub effective_policies: std::collections::HashMap<String, SourceAttributes>,
-}
-
-#[derive(Clone, Default, Deserialize, Serialize)]
-pub struct SourceAttributes {
-    pub attributes: Map<String, Value>,
-}
 #[derive(Deserialize, Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ResultEntryMeta {
